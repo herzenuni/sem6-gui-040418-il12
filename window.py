@@ -1,5 +1,6 @@
 from tkinter import Tk, Entry, Frame, Label, Button, Canvas, Text, messagebox, Toplevel, Listbox, Scrollbar
-from solve import solve
+import solve
+
 
 class main(Frame):
 
@@ -153,7 +154,7 @@ class main(Frame):
                 delimiter = 0
                 delimiter_i += 1
 
-        s = solve(matrix)
+        s = solve.solve(matrix)
 
         messagebox.showwarning('Решение системы','Решение системы записано в файл "Ответ.txt".')
 
